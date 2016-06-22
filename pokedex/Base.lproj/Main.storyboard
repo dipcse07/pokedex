@@ -387,15 +387,21 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zwg-5N-ffc">
                                 <rect key="frame" x="0.0" y="428" width="600" height="32"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO Evolution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APE-05-dBn">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NO Evolution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APE-05-dBn">
                                         <rect key="frame" x="222" y="3" width="156" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="156" id="JcO-hn-clp"/>
+                                            <constraint firstAttribute="width" constant="300" id="jpc-CE-xTr"/>
                                             <constraint firstAttribute="height" constant="25" id="nUi-pc-x0P"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="JcO-hn-clp"/>
+                                            </mask>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98431372549019602" green="0.24705882352941178" blue="0.26666666666666666" alpha="0.79294181034482758" colorSpace="calibratedRGB"/>
